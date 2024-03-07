@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/OrthoCurve">
+        <file>Resources/3shape.png</file>
+        <file>Resources/degree.png</file>
+        <file>Resources/curve.png</file>
+        <file>Resources/next.png</file>
+        <file>Resources/open.png</file>
+        <file>Resources/prev.png</file>
+        <file>Resources/save.png</file>
+        <file>Resources/setting.png</file>
+        <file>Resources/mark.png</file>
+        <file>Resources/remove.png</file>
+        <file>Resources/OrthoCurve.png</file>
+        <file>Resources/back.png</file>
+        <file>Resources/down.png</file>
+        <file>Resources/front.png</file>
+        <file>Resources/left.png</file>
+        <file>Resources/right.png</file>
+        <file>Resources/up.png</file>
+        <file>Resources/align model.png</file>
+        <file>Resources/pick align.png</file>
+        <file>Resources/thermoBase.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrthoCurveClass</class>
+ <widget class="QMainWindow" name="OrthoCurveClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">OrthoCurve</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionImportSTL"/>
+   <addaction name="actionSetting"/>
+   <addaction name="actionComputeCurve"/>
+   <addaction name="actionRemoveLastPoints"/>
+   <addaction name="actionMarkIcon"/>
+   <addaction name="actionAdjustDegree"/>
+   <addaction name="actionSaveCurve"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionImportSTL">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resources/open.png</normaloff>
+     <normalon>:/OrthoCurve/Resources/open.png</normalon>Resources/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open STL models</string>
+   </property>
+  </action>
+  <action name="actionComputeCurve">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resources/curve.png</normaloff>
+     <normalon>:/OrthoCurve/Resources/curve.png</normalon>Resources/curve.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show Line</string>
+   </property>
+   <property name="toolTip">
+    <string>show cutting line</string>
+   </property>
+  </action>
+  <action name="actionSaveCurve">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resources/save.png</normaloff>
+     <normalon>:/OrthoCurve/Resources/save.png</normalon>Resources/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save cutting line</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resources/setting.png</normaloff>
+     <normalon>:/OrthoCurve/Resources/setting.png</normalon>Resources/setting.png</iconset>
+   </property>
+   <property name="text">
+    <string>System Setting</string>
+   </property>
+   <property name="toolTip">
+    <string>systerm setting</string>
+   </property>
+  </action>
+  <action name="actionMarkIcon">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resources/mark.png</normaloff>
+     <normalon>:/OrthoCurve/Resources/edit.png</normalon>Resources/mark.png</iconset>
+   </property>
+   <property name="text">
+    <string>Laser point</string>
+   </property>
+   <property name="toolTip">
+    <string>pick laser mark position</string>
+   </property>
+  </action>
+  <action name="actionRemoveLastPoints">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resources/remove.png</normaloff>
+     <normalon>:/OrthoCurve/Resources/remove.png</normalon>Resources/remove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete last point</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete last point</string>
+   </property>
+  </action>
+  <action name="actionappICON">
+   <property name="icon">
+    <iconset resource="orthocurve.qrc">
+     <normaloff>:/OrthoCurve/Resources/OrthoCurve.png</normaloff>:/OrthoCurve/Resources/OrthoCurve.png</iconset>
+   </property>
+   <property name="text">
+    <string>app icon</string>
+   </property>
+  </action>
+  <action name="actionAdjustDegree">
+   <property name="icon">
+    <iconset resource="orthocurve.qrc">
+     <normaloff>:/OrthoCurve/Resources/degree.png</normaloff>:/OrthoCurve/Resources/degree.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trim Angel Optimize</string>
+   </property>
+   <property name="toolTip">
+    <string>Trim Angel Optimize</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="orthocurve.qrc"/>
+ </resources>
+ <connections/>
+</ui>

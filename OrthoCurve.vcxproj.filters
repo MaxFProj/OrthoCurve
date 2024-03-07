@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{10e29ead-68f6-40c4-a743-39a24d5c09c0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{b9b2d4c0-4953-45d0-be69-e171fc22dfbe}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{d94db0a8-6529-4461-bc77-4122f9f43c4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Arcball">
+      <UniqueIdentifier>{abcc627e-1e3c-4ffd-8c53-fa3e310c7125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{79653dbf-2d04-4102-8416-deb308a801c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LicenseManager">
+      <UniqueIdentifier>{4eebbc32-39d9-44a3-89af-70df23fd70e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Graphics\Header Files\LicenseManager">
+      <UniqueIdentifier>{81293cfd-bbcc-4b0f-9a4a-f14413497666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\qrcode">
+      <UniqueIdentifier>{a29e1aea-b726-4632-b3c4-bd1d492346dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\qrcode">
+      <UniqueIdentifier>{f9cce8bf-cc5d-4360-a6e2-8d4e324341b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="orthocurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\Arcball\TrackBall.cpp">
+      <Filter>Graphics\Arcball</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\Arcball\TrackMode.cpp">
+      <Filter>Graphics\Arcball</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\AxisIcon.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\Camera.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\CustomInteractor.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\CustomScene.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\editInteraction.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\ImporterStl.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\LightColorGL.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\ObjectMotion.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\OpenGLDevice.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\SceneObject.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DInteractorGL3D.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DMeshData.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DMeshModel.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DMeshRenderer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DObject.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DRenderer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DSceneGL.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DSceneGL3D.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DTextureGL.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\sn3DTopology.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\SpaceBox.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomGLWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshBoundaryExtract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BatchModels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeCurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshClean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editDrawCurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editManuallyDrawCurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcgmesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LicenseManager\DESEncrypter.cpp">
+      <Filter>Source Files\LicenseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LicenseManager\emxCodeRegister.cpp">
+      <Filter>Source Files\LicenseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LicenseManager\emxMessageHandler.cpp">
+      <Filter>Source Files\LicenseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LicenseManager\emxRegisterDialog.cpp">
+      <Filter>Source Files\LicenseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LicenseManager\LicenseManager.cpp">
+      <Filter>Source Files\LicenseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LicenseManager\QtLicenseManager.cpp">
+      <Filter>Source Files\LicenseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SGSmooth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\bitstream.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\mask.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\mmask.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\mqrspec.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\qrencode.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\qrinput.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\qrspec.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\rsecc.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\split.c">
+      <Filter>Source Files\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="editMarkIcon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_emxCodeRegister.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_emxMessageHandler.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_emxRegisterDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GraphicsScene.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_OpenGLView.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_orthocurve.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtLicenseManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SettingWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="orthocurve.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtMoc Include="orthocurve.h">
+      <Filter>Graphics\Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Graphics\Arcball\TrackBall.h">
+      <Filter>Graphics\Arcball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\Arcball\Trackmode.h">
+      <Filter>Graphics\Arcball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\Arcball\TrackRecorder.h">
+      <Filter>Graphics\Arcball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\Arcball\TrackUtils.h">
+      <Filter>Graphics\Arcball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\AxisIcon.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\Camera.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\CustomInteractor.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\CustomScene.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\edge.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\editinteraction.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\face.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\importerstl.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\LightColorGL.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\ObjectMotion.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\OpenGLDevice.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\SceneObject.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3DGeometryData.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3dinteractorgl3d.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3DMeshData.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3dmeshmodel.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3DMeshRenderer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3dobject.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3drenderer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3DSceneGL.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3DSceneGL3D.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3DTextureGL.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\sn3DTopology.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\SpaceBox.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\vertex.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\base.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\box2.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\box3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\color4.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\intersection3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\lin_algebra.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\line3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\math.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\matrix33.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\matrix44.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\plane3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\point2.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\point3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\point4.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\quaternion.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ray3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\segment3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\similarity.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\space1.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sphere3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\triangle_triangle3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\triangle3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomGLWidget.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshBoundaryExtract.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editManuallyDrawCurve.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshclean.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshGrid.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editDrawCurve.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcgmesh.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LicenseManager\apibase.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LicenseManager\config.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LicenseManager\DESEncrypter.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LicenseManager\LicenseManager.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SGSmooth.h">
+      <Filter>Graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DialogButtonBottom.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_orthocurve.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\bitstream.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\config.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\mask.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\mmask.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\mqrspec.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\qrencode.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\qrencode_inner.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\qrinput.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\qrspec.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\rsecc.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\split.h">
+      <Filter>Common\qrcode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OrthoCurve.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="orthocurve.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="DialogButtonBottom.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="fileNameDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="thermobase.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BatchModels.h">
+      <Filter>Graphics\Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ComputeCurve.h">
+      <Filter>Graphics\Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="GraphicsScene.h">
+      <Filter>Graphics\Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="OpenGLView.h">
+      <Filter>Graphics\Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingWidget.h">
+      <Filter>Graphics\Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\LicenseManager\emxCodeRegister.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </QtMoc>
+    <QtMoc Include="..\LicenseManager\emxMessageHandler.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </QtMoc>
+    <QtMoc Include="..\LicenseManager\emxRegisterDialog.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </QtMoc>
+    <QtMoc Include="..\LicenseManager\QtLicenseManager.h">
+      <Filter>Graphics\Header Files\LicenseManager</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

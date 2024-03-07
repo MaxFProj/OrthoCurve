@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ResourceCompile Include="OrthoCurve.rc" />
+  </ItemGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>Qt5.6</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtDeploy>false</QtDeploy>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>Qt5.6</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\GeneratedFiles\$(ConfigurationName)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>%(Filename)</InitFuncName>
+      <Compression>default</Compression>
+      <NoCompression>true</NoCompression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\GeneratedFiles</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;UNICODE;WIN32;QT_DLL;NOMINMAX;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtXmlPatterns;$(QTDIR)\include\QtScript;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;../h/;./h/;./;../;../Graphics/;.;../vcglib;../vcglib/eigenlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4838;4819;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib/x64/gl/;../x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PQP.lib;glut64.lib;opengl32.lib;glu32.lib;glew32.lib;../lib/mcut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\GeneratedFiles\$(ConfigurationName)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>%(Filename)</InitFuncName>
+      <Compression>default</Compression>
+      <NoCompression>true</NoCompression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\GeneratedFiles</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\GeneratedFiles\$(ConfigurationName)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>%(Filename)</InitFuncName>
+      <Compression>default</Compression>
+      <NoCompression>true</NoCompression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\GeneratedFiles</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;UNICODE;WIN32;QT_DLL;QT_NO_DEBUG;NDEBUG;NOMINMAX;HAVE_CONFIG_H;IS_TWIN_MODEL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtXmlPatterns;$(QTDIR)\include\QtScript;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;../h/;./h/;./;../;../Graphics/;.;../vcglib;../vcglib/eigenlib;../boost_1_75_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <Optimization>MaxSpeed</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4838;4819;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib/x64/gl/;../x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>PQP.lib;opengl32.lib;glu32.lib;glut64.lib;glew32.lib;../lib/mcut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\GeneratedFiles\$(ConfigurationName)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>%(Filename)</InitFuncName>
+      <Compression>default</Compression>
+      <NoCompression>true</NoCompression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\GeneratedFiles</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Graphics\Arcball\TrackBall.cpp" />
+    <ClCompile Include="..\Graphics\Arcball\TrackMode.cpp" />
+    <ClCompile Include="..\Graphics\AxisIcon.cpp" />
+    <ClCompile Include="..\Graphics\Camera.cpp" />
+    <ClCompile Include="..\Graphics\CustomInteractor.cpp" />
+    <ClCompile Include="..\Graphics\CustomScene.cpp" />
+    <ClCompile Include="..\Graphics\editInteraction.cpp" />
+    <ClCompile Include="..\Graphics\ImporterStl.cpp" />
+    <ClCompile Include="..\Graphics\LightColorGL.cpp" />
+    <ClCompile Include="..\Graphics\ObjectMotion.cpp" />
+    <ClCompile Include="..\Graphics\OpenGLDevice.cpp" />
+    <ClCompile Include="..\Graphics\SceneObject.cpp" />
+    <ClCompile Include="..\Graphics\sn3DInteractorGL3D.cpp" />
+    <ClCompile Include="..\Graphics\sn3DMeshData.cpp" />
+    <ClCompile Include="..\Graphics\sn3DMeshModel.cpp" />
+    <ClCompile Include="..\Graphics\sn3DMeshRenderer.cpp" />
+    <ClCompile Include="..\Graphics\sn3DObject.cpp" />
+    <ClCompile Include="..\Graphics\sn3DRenderer.cpp" />
+    <ClCompile Include="..\Graphics\sn3DSceneGL.cpp" />
+    <ClCompile Include="..\Graphics\sn3DSceneGL3D.cpp" />
+    <ClCompile Include="..\Graphics\sn3DTextureGL.cpp" />
+    <ClCompile Include="..\Graphics\sn3DTopology.cpp" />
+    <ClCompile Include="..\Graphics\SpaceBox.cpp" />
+    <ClCompile Include="..\LicenseManager\DESEncrypter.cpp" />
+    <ClCompile Include="..\LicenseManager\emxCodeRegister.cpp" />
+    <ClCompile Include="..\LicenseManager\emxMessageHandler.cpp" />
+    <ClCompile Include="..\LicenseManager\emxRegisterDialog.cpp" />
+    <ClCompile Include="..\LicenseManager\LicenseManager.cpp" />
+    <ClCompile Include="..\LicenseManager\QtLicenseManager.cpp" />
+    <ClCompile Include="BatchModels.cpp" />
+    <ClCompile Include="ComputeCurve.cpp" />
+    <ClCompile Include="CustomGLWidget.cpp" />
+    <ClCompile Include="editDrawCurve.cpp" />
+    <ClCompile Include="editManuallyDrawCurve.cpp" />
+    <ClCompile Include="editMarkIcon.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_emxCodeRegister.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_emxMessageHandler.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_emxRegisterDialog.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_GraphicsScene.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_OpenGLView.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_orthocurve.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtLicenseManager.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_SettingWidget.cpp" />
+    <ClCompile Include="GraphicsScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MeshBoundaryExtract.cpp" />
+    <ClCompile Include="MeshClean.cpp" />
+    <ClCompile Include="MeshGrid.cpp" />
+    <ClCompile Include="OpenGLView.cpp" />
+    <ClCompile Include="orthocurve.cpp" />
+    <ClCompile Include="qrcode\bitstream.c" />
+    <ClCompile Include="qrcode\mask.c" />
+    <ClCompile Include="qrcode\mmask.c" />
+    <ClCompile Include="qrcode\mqrspec.c" />
+    <ClCompile Include="qrcode\qrencode.c" />
+    <ClCompile Include="qrcode\qrinput.c" />
+    <ClCompile Include="qrcode\qrspec.c" />
+    <ClCompile Include="qrcode\rsecc.c" />
+    <ClCompile Include="qrcode\split.c" />
+    <ClCompile Include="SettingWidget.cpp" />
+    <ClCompile Include="SGSmooth.cpp" />
+    <ClCompile Include="vcgmesh.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="orthocurve.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\base.h" />
+    <ClInclude Include="..\Common\box2.h" />
+    <ClInclude Include="..\Common\box3.h" />
+    <ClInclude Include="..\Common\color4.h" />
+    <ClInclude Include="..\Common\intersection3.h" />
+    <ClInclude Include="..\Common\line3.h" />
+    <ClInclude Include="..\Common\lin_algebra.h" />
+    <ClInclude Include="..\Common\math.h" />
+    <ClInclude Include="..\Common\matrix33.h" />
+    <ClInclude Include="..\Common\matrix44.h" />
+    <ClInclude Include="..\Common\plane3.h" />
+    <ClInclude Include="..\Common\point2.h" />
+    <ClInclude Include="..\Common\point3.h" />
+    <ClInclude Include="..\Common\point4.h" />
+    <ClInclude Include="..\Common\quaternion.h" />
+    <ClInclude Include="..\Common\ray3.h" />
+    <ClInclude Include="..\Common\segment3.h" />
+    <ClInclude Include="..\Common\similarity.h" />
+    <ClInclude Include="..\Common\space1.h" />
+    <ClInclude Include="..\Common\sphere3.h" />
+    <ClInclude Include="..\Common\triangle3.h" />
+    <ClInclude Include="..\Common\triangle_triangle3.h" />
+    <ClInclude Include="..\Graphics\Arcball\TrackBall.h" />
+    <ClInclude Include="..\Graphics\Arcball\Trackmode.h" />
+    <ClInclude Include="..\Graphics\Arcball\TrackRecorder.h" />
+    <ClInclude Include="..\Graphics\Arcball\TrackUtils.h" />
+    <ClInclude Include="..\Graphics\AxisIcon.h" />
+    <ClInclude Include="..\Graphics\Camera.h" />
+    <ClInclude Include="..\Graphics\CustomInteractor.h" />
+    <ClInclude Include="..\Graphics\CustomScene.h" />
+    <ClInclude Include="..\Graphics\edge.h" />
+    <ClInclude Include="..\Graphics\editinteraction.h" />
+    <ClInclude Include="..\Graphics\face.h" />
+    <ClInclude Include="..\Graphics\importerstl.h" />
+    <ClInclude Include="..\Graphics\LightColorGL.h" />
+    <ClInclude Include="..\Graphics\ObjectMotion.h" />
+    <ClInclude Include="..\Graphics\OpenGLDevice.h" />
+    <ClInclude Include="..\Graphics\SceneObject.h" />
+    <ClInclude Include="..\Graphics\sn3DGeometryData.h" />
+    <ClInclude Include="..\Graphics\sn3dinteractorgl3d.h" />
+    <ClInclude Include="..\Graphics\sn3DMeshData.h" />
+    <ClInclude Include="..\Graphics\sn3dmeshmodel.h" />
+    <ClInclude Include="..\Graphics\sn3DMeshRenderer.h" />
+    <ClInclude Include="..\Graphics\sn3dobject.h" />
+    <ClInclude Include="..\Graphics\sn3drenderer.h" />
+    <ClInclude Include="..\Graphics\sn3DSceneGL.h" />
+    <ClInclude Include="..\Graphics\sn3DSceneGL3D.h" />
+    <ClInclude Include="..\Graphics\sn3DTextureGL.h" />
+    <ClInclude Include="..\Graphics\sn3DTopology.h" />
+    <ClInclude Include="..\Graphics\SpaceBox.h" />
+    <ClInclude Include="..\Graphics\vertex.h" />
+    <ClInclude Include="..\LicenseManager\apibase.h" />
+    <ClInclude Include="..\LicenseManager\config.h" />
+    <ClInclude Include="..\LicenseManager\DESEncrypter.h" />
+    <QtMoc Include="..\LicenseManager\emxCodeRegister.h" />
+    <QtMoc Include="..\LicenseManager\emxMessageHandler.h" />
+    <QtMoc Include="..\LicenseManager\emxRegisterDialog.h" />
+    <ClInclude Include="..\LicenseManager\LicenseManager.h" />
+    <QtMoc Include="..\LicenseManager\QtLicenseManager.h" />
+    <ClInclude Include="GeneratedFiles\ui_DialogButtonBottom.h" />
+    <ClInclude Include="qrcode\bitstream.h" />
+    <ClInclude Include="qrcode\config.h" />
+    <ClInclude Include="qrcode\mask.h" />
+    <ClInclude Include="qrcode\mmask.h" />
+    <ClInclude Include="qrcode\mqrspec.h" />
+    <ClInclude Include="qrcode\qrencode.h" />
+    <ClInclude Include="qrcode\qrencode_inner.h" />
+    <ClInclude Include="qrcode\qrinput.h" />
+    <ClInclude Include="qrcode\qrspec.h" />
+    <ClInclude Include="qrcode\rsecc.h" />
+    <ClInclude Include="qrcode\split.h" />
+    <ClInclude Include="SGSmooth.h" />
+    <ClInclude Include="vcgmesh.h" />
+    <QtMoc Include="SettingWidget.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <CustomBuild Include="BatchModels.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="ComputeCurve.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="CustomGLWidget.h" />
+    <ClInclude Include="editDrawCurve.h" />
+    <ClInclude Include="editManuallyDrawCurve.h" />
+    <ClInclude Include="GeneratedFiles\ui_orthocurve.h" />
+    <ClInclude Include="MeshBoundaryExtract.h" />
+    <ClInclude Include="meshclean.h" />
+    <ClInclude Include="MeshGrid.h" />
+    <QtMoc Include="OpenGLView.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+    <QtMoc Include="GraphicsScene.h">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DynamicSource>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="orthocurve.qrc">
+      <QtRccDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\</QtRccDir>
+      <QtRccFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="DialogButtonBottom.ui" />
+    <QtUic Include="fileNameDialog.ui" />
+    <QtUic Include="orthocurve.ui" />
+    <QtUic Include="thermobase.ui" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
